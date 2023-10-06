@@ -1,11 +1,9 @@
 # Chris Print Website
 ## This is the Official website of **Chris Print**
 
-- - -
 ## About the client
 Maintenance, repair, sale and rental company of printers and computer equipment. with a store in Osasco, Sao Paulo, Brazil.
 
-- - -
 ## About this project
 
 You can see this project alive [HERE](https://hurling-individuals.000webhostapp.com/)
