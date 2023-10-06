@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+        
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="keiner mendoza" >
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <title>CP Soluções</title>
+    <meta name="title" content="CP Soluções">
+    <meta name="description" content="Manutenção de Smartphones, Laptops, Tablets, Computadores, Impressoras, venda e recarga de Cartuchos 
+    de Tinta, Toner e mais">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cpsolucoes.github.io/">
+    <meta property="og:title" content="CP Soluções">
+    <meta property="og:description" content="Manutenção de Smartphones, Laptops, Tablets, Computadores, Impressoras, venda e recarga de Cartuchos 
+    de Tinta, Toner e mais">
+    <meta property="og:image" content="https://cpsolucoes.github.io./logo_redes.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://cpsolucoes.github.io/">
+    <meta property="twitter:title" content="CP Soluções">
+    <meta property="twitter:description" content="Manutenção de Smartphones, Laptops, Tablets, Computadores, Impressoras, venda e recarga de Cartuchos 
+    de Tinta, Toner e mais">
+    <meta property="twitter:image" content="https://cpsolucoes.github.io./logo_redes.png">
+    <!-- testing conection -->
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <!-- SweetAlert -->
+    <script src="assets/sweetAlert.js"></script>
+
+    
+    <!-- own css and js -->
+    <script src="assets/actions.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <figure class="logo">
+                <img src="assets/images/mini_logo.png" alt="logo">
+            </figure>
+            
+            <div class="hamburguer btn"><i class="fa-solid fa-bars"></i></div>
+            
+            
+                <ul class="navbar__links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#opiniones">Opiniões</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#faq">Perguntas Frequentes</a></li>
+                </ul>
+
+                <!-- POP-UPS -->
+                <div id="card-celular" class="popUP">
+
+                    <button class="close-btn btn"><i class="fa-solid fa-xmark"></i></button>
+        
+                    <h3>Celulares Smartphone e Tablet</h3>
+                    <ul>
+                        <li>Troca de Tela</li>
+                        <li>Troca de Conector</li>
+                        <li>Troca de Bateria</li>
+                        <li>Troca de Microfone</li>
+                        <li>Troca de Alto-Falante</li>
+                        <li>Reparo de Placa</li>
+                        <li>Atualizacao de Software</li>
+                        <li>Conta Google</li>
+                    </ul>
+                </div>
+
+                <div id="card-laptop" class="popUP">
+                    <button class="close-btn btn"><i class="fa-solid fa-xmark"></i></button>
+                    <h3>Notebook, Desktop e Laptop</h3>
+                    <ul>
+                        <li>Formatação</li>
+                        <li>Atualização</li>
+                        <li>Instalação de Programas</li>
+                        <li>Manutenção de Hardware(Tela, Teclado, Bateria, Memoria, HDD SSD)</li>
+                        <li>Outros Serviços</li>
+                    </ul>
+                </div>
+
+                <div id="card-impressora" class="popUP">
+                    <button class="close-btn btn"><i class="fa-solid fa-xmark"></i></button>
+                    <h3>Impressoras, Cartuchos de Tinta e Toner</h3>
+                    <ul>
+                        <li>Manutenção e/ou Limpeza de Impressoras</li>
+                        <li>Venda, Recarga e Troca de Tinta, Cartuchos de Tinta e Toner</li>
+                        <li>Instalação e Configuração de Impressora no Local</li>
+                    </ul>
+                </div>
+
+                <div id="card-outros" class="popUP">
+                    <button class="close-btn btn"><i class="fa-solid fa-xmark"></i></button>
+                    <h3>Outros</h3>
+                    <ul>
+                        <li>Impressão (Boletos, Contratos, Multas, 2da ViA, etc)</li>
+                        <li>Digitalização</li>
+                        <li>Plastificação</li>
+                        <li>Acessorios para Celular (Carregador, Cabo, Fone, Pelicula, etc)</li>
+                        <li>Produtos de Papeleria</li>
+                    </ul>
+                </div>
+
+            </nav>
+    </header>
+    <main>
+        
+        <section class="hero flex-container" id="home">
+
+            <figure class="hero__image__container">
+                <img src="assets/images/nuevo.png" alt="Imagem de celular, impressora e tablet.">
+            </figure>
+            
+            <div class="hero__text__container">
+                <h1>Manutenção de Smartphones, Laptops, Tablets, Computadores, Impressoras, venda e recarga de Cartuchos 
+                    de Tinta, Toner e mais...</h1>
+                <p>Entre en contato com a nossa equipe e solicite um orçamento sem compromiso.</p>
+                <a href="https://wa.me/message/SQ5MJWRVHPNHK1" class="centred btn saber__mais btn-big btn-hero"><i class="fa-brands fa-whatsapp"></i> Escreva ao nosso Whatsapp</a>
+            </div>
+
+            
+            
+        </section>
+        
+        
+        <section id="servicos" class="flex-container servicos__section">
+
+            <div class="servicos__title">
+                <h2 class="title">Serviços</h2>
+            </div>
+
+            <div class="servicos__gallery">
+
+                <article class="card flex-vertical">
+                    <figure class="card__image__container">
+                        <img src="assets/images/impressora_.png" alt="Impresora">
+                    </figure>
+                    <div class="card__body flex-vertical">
+    
+                        <h3>Manutenção de Impressoras</h3>
+                        <p>Oferecemos manutenção e conserto de todo tipo de impressoras, incluindo laser, jato de tinta, 
+                            Matriciais e termicas. Tambem oferecemos serviço de limpeza e manutenção preventiva.</p>
+                        <button data-meta="#card-impressora" class="btn saiba__mais mas__informacion">Mais informações</button> 
+                        <a class="btn saber__mais" href="https://wa.me/message/SQ5MJWRVHPNHK1"><i class="fa-brands fa-whatsapp"></i> Entre em Contato</a>
+                        
+                    </div>
+                </article>
+                
+                <article class="card flex-vertical">
+                    <figure class="card__image__container">
+                        <img src="assets/images/imprecion_.png" alt="Impreção">
+                    </figure>
+                    <div class="card__body flex-vertical">
+                        <h3>Outsourcinh de impressão</h3>
+                        <p>Oferecemos o mais completo serviço de outsorcing de impressão, com planos de locação personalizados
+                            de acordo com a sua demanda e necessidade. </p>
+                        
+                        <button data-meta="#card-impressora" class="btn saiba__mais mas__informacion">Mais informações</button> 
+                        <a class="btn saber__mais" href="https://wa.me/message/SQ5MJWRVHPNHK1"><i class="fa-brands fa-whatsapp"></i> Entre em Contato</a>
+                        
+                        
+                    </div>
+                </article>
+                
+                
+               
+                <article class="card flex-vertical">
+                    <figure class="card__image__container">
+                        <img src="assets/images/laptop_.png" alt="Laptop">
+
+                    </figure>
+                    <div class="card__body flex-vertical">
+                        <h3>Assistencia técnica para computadores</h3>
+                        <p>A assistência para computadores, desktop e portateis de todas as marcas
+                            é feita pelos técnicos mais qualificados da região. Resolvemos qualquer problema.</p>
+                        
+                            <button data-meta="#card-laptop" class="btn saiba__mais mas__informacion">Mais informações</button>
+                        <a class="btn saber__mais" href="https://wa.me/message/SQ5MJWRVHPNHK1"><i class="fa-brands fa-whatsapp"></i> Entre em Contato</a>
+                    </div>
+                </article>
+                
+                <article class="card flex-vertical">
+                    <figure class="card__image__container">
+                        <img src="assets/images/tablet_.png" alt="Tablet">
+
+
+                    </figure>
+                    <div class="card__body flex-vertical">
+                        <h3>Conserto de Tablets</h3>
+                        <p>Oferecemos serviços de reparo para todos os tipos de tablets. 
+                            A nossa equipe de técnicos experientes pode resolver qualquer problema, desde troca de tela, até problemas de placa. </p>
+                            <button data-meta="#card-celular" class="btn saiba__mais mas__informacion">Mais informações</button>
+                        <a class="btn saber__mais" href="https://wa.me/message/SQ5MJWRVHPNHK1"><i class="fa-brands fa-whatsapp"></i> Entre em Contato</a>
+                        
+                    </div>
+                </article>
+
+                <article class="card flex-vertical">
+                    <figure class="card__image__container">
+                        <img src="assets/images/iphone_.png" alt="Celular">
+                    </figure>
+                    <div class="card__body flex-vertical">
+                        <h3>Conserto de Celulares</h3>
+                        <p>Consertamos seu celular danificado em tempo recorde. Desde telas quebradas  
+                            problemas de carga, nossos especialistas estão prontos para resolver qualquer 
+                            problema em seu telefone celular</p>
+                            <button data-meta="#card-celular" class="btn saiba__mais mas__informacion">Mais informações</button>
+                        <a class="btn saber__mais" href="https://wa.me/message/SQ5MJWRVHPNHK1"><i class="fa-brands fa-whatsapp"></i> Entre em Contato</a>
+                    </div>
+                </article>
+
+                <article class="card flex-vertical">
+                    <figure class="card__image__container">
+                        <img src="assets/images/toners.png" alt="Toners">
+                    </figure>
+                    <div class="card__body flex-vertical">
+                        <h3>Recarga e Venda de Toners e Cartuchos</h3>
+                        <p>Na nossa loja você encontra uma grande variedade de marcas e modelos de toners e cartuchos para recarregar ou comprar. Aproveite a comodidade e rapidez do nosso serviço.</p>
+                        <button data-meta="#card-impressora" class="btn saiba__mais mas__informacion">Mais informações</button>
+                        <a class="btn saber__mais" href="https://wa.me/message/SQ5MJWRVHPNHK1"><i class="fa-brands fa-whatsapp"></i> Entre em Contato</a>
+                        
+                    </div>
+                </article>
+
+                
+
+            <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200"><path fill="#1d95eb" fill-opacity="1" d="M0,192L60,165.3C120,139,240,85,360,80C480,75,600,117,720,122.7C840,128,960,96,1080,85.3C1200,75,1320,85,1380,90.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+            
+        </section>
+
+        <section id="opiniones" class="section__valoraciones" >
+            <h3 class="subtitle">Descubra por que nossos clientes estão satisfeitos e junte-se a eles. 
+                Entre em contato conosco agora para saber mais.</h3>
+            <div class="big__container__swiper">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <article class="swiper-slide card flex-vertical">
+                            <figure class="card__image__container">
+                                <img src="assets/profiles/p_7.png" alt="Toners">
+                            </figure>
+                            <div class="card__body flex-vertical">
+                                <h3>Aretha Tagliari</h3>
+                                <p><q>
+                                    Muito bom, confiável. Deixou minha 
+                                    impressora novinha . Parabéns 👏
+                                </q></p>
+                                <div class="raiting">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                
+                            </div>
+                        </article>
+                        <article class="swiper-slide card flex-vertical">
+                            <figure class="card__image__container">
+                                <img src="assets/profiles/p_6.png" alt="Toners">
+                            </figure>
+                            <div class="card__body flex-vertical">
+                                <h3>Osasco Laser</h3>
+                                <p><q>
+                                    São excelentes e super profissionais. Entregam 
+                                    no prazo e com preço bem justo. SUPER INDICO!!!!
+                                </q></p>
+                                <div class="raiting">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                
+                            </div>
+                        </article>
+                        <article class="swiper-slide card flex-vertical">
+                        <figure class="card__image__container">
+                            <img src="assets/profiles/p_5.png" alt="Toners">
+                        </figure>
+                        <div class="card__body flex-vertical">
+                            <h3>Larissa Stork</h3>
+                            <p><q>Atendimento rápido e de qualidade, assim como a 
+                                impressão! E preço justo! Super recomendo!
+                            </q></p>
+                            <div class="raiting">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            
+                        </div>
+                    </article>
+
+                    <article class="swiper-slide card flex-vertical">
+                        <figure class="card__image__container">
+                            <img src="assets/profiles/p_4.png" alt="Toners">
+                        </figure>
+                        <div class="card__body flex-vertical">
+                            <h3>Simoni Martins</h3>
+                            <p><q>Atendimento nota mil, super educado, atencioso, 
+                                e sempre tem tudo que preciso, os mais variados tonners
+                                e assistência técnica de qualidade.
+                            </q></p>
+                            <div class="raiting">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                    
+                        </div>
+                    </article>
+                    <article class="swiper-slide card flex-vertical">
+                        <figure class="card__image__container">
+                            <img src="assets/profiles/p_3.png" alt="Toners">
+                        </figure>
+                        <div class="card__body flex-vertical">
+                            <h3>Marcos Dorazzio Lirio</h3>
+                            <p><q>
+                                Muito boa e bem prestativo, atende rapido e tem 
+                                conhecimento naquilo qye faz, recomendo@
+                            </q></p>
+                            <div class="raiting">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            
+                        </div>
+                    </article>
+                    <article class="swiper-slide card flex-vertical">
+                        <figure class="card__image__container">
+                            <img src="assets/profiles/p_8.png" alt="Toners">
+                        </figure>
+                        <div class="card__body flex-vertical">
+                            <h3>Ana Flávia Luna Miranda</h3>
+                            <p><q>
+                                Atendimento ótimo.
+                                Super indico
+                            </q></p>
+                            <div class="raiting">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            
+                        </div>
+                    </article>
+                    <article class="swiper-slide card flex-vertical">
+                        <figure class="card__image__container">
+                            <img src="assets/profiles/p_2.png" alt="Toners">
+                        </figure>
+                        <div class="card__body flex-vertical">
+                            <h3>Romilson Santana</h3>
+                            <p><q>
+                                Muito bom! Nos atendeu prontamente, nos deu um mega suporte, tem um preço 
+                                justo e notamos que eles presam pela satisfação do cliente e com um trabalho
+                                de qualidade! Recomendo!
+                            </q></p>                
+                            <div class="raiting">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            
+                        </div>
+                    </article>
+                    <article class="swiper-slide card flex-vertical">
+                        <figure class="card__image__container">
+                            <img src="assets/profiles/p_1.png" alt="Toners">
+                        </figure>
+                        <div class="card__body flex-vertical">
+                            <h3>Mari Sacramento</h3>
+                            <q>Empresa muito bem amparada por profissionais prestativos, atenciosos e dedicados.
+                                Me atenderam prontamente e solucionaram todos meus problemas rapidamente.</q>
+                                <div class="raiting">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            
+                        </div>
+                    </article>
+                    
+                </div>
+            
+                <!-- If we need pagination -->
+            
+                
+            
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+
+                <div class="pagination_">
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"><img src="assets/icons/back.svg" alt="arrow back"></div>
+                    <div class="swiper-button-next"><img src="assets/icons/next.svg" alt="arrow next"></div>
+                </div>
+
+
+                <div class="swiper-pagination"></div>
+
+                <!-- end big__container__swiper -->
+            
+            </div>
+            
+            
+            
+            <a target="_blank" href="https://search.google.com/local/reviews?placeid=ChIJXYiyzhr_zpQR7eBgyuYsHdo" 
+            class="saber__mais btn btn-big btn-maps">
+            <i class="fa-regular fa-map"></i> Mais Opiniões no <span class="nowrap">Google Maps</span></a>
+
+            <a href="https://wa.me/message/SQ5MJWRVHPNHK1" class="centred btn saber__mais btn-big btn-hero"><i class="fa-brands fa-whatsapp"></i> Escreva ao nosso Whatsapp</a>
+
+ 
+
+        </section>
+
+        <section id="contato" class="contato__section">
+            <h2 class="title">Contato</h2>
+    
+                <div class="flex-container flex-contato">
+                    <!-- solo para contener -->
+                    <div class="form__container flex-vertical">
+                        <h3 class="subtitle">Entre en contato com conosco.</h3>
+                        <form class="contact_form" id="contact_form" action="registrar.php">
+                            <label for="name">Nome </label>
+                            <input placeholder="*" type="text" name="name" id="name">
+                            <label for="email">Email </label>
+                            <input placeholder="*" type="email" name="email" id="email">
+                            <label for="phone">Telefone </label>
+                            <input placeholder="*" type="text" name="phone" id="phone">
+                            <label for="message">Mensage</label>
+                            <textarea rows="3" placeholder="Pode escrever uma mensagem descrevendo sua consulta, esto é opcional." col="20" type="text" name="message" id="message">
+                            </textarea>
+                            <input type="submit" class="btn saber__mais" value="Enviar">
+                        </form>
+                    </div>
+                    <div class="google__map flex-vertical">
+                        <h3 class="subtitle">Estamos Localizados em Rua Dona Primitiva Vianco, 754 - Centro, <span class="nowrap">Osasco - SP,</span> 06016-004, Brasil.</h3>
+                        <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.931417307499!2d-46.7757781!3d-23.534969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ceff1aceb2885d%3A0xda1d2ce6ca60e0ed!2s%22Chris%20Print%22%20Toners%20e%20Impressoras!5e0!3m2!1ses-419!2sbr!4v1683505852047!5m2!1ses-419!2sbr" 
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    
+                </div>
+
+                <a href="https://wa.me/message/SQ5MJWRVHPNHK1" class="centred btn saber__mais btn-big btn-hero"><i class="fa-brands fa-whatsapp"></i> Escreva ao nosso Whatsapp</a>
+
+            </section>
+
+        <section class="faq__section" id="faq">
+            <h2 class="title">Perguntas Frequentes</h2>
+            <div class="accordion">
+
+                <article class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Qual é horario de funcionamento da loja?</h3>
+                        <i class="fa-sharp fa-solid fa-arrow-right"></i>
+
+                    </div>
+                    <div class="accordion-content">
+                        <p>
+                            Nosso horário de atendimento é de segunda a sexta, das 9:00h às 18:00h.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Quanto tempo leva pra consertar o meu dispositivo?</h3>
+                        <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>
+                            O tempo de reparo varia de acordo com o problema apresentado pelo dispositivo,
+                             mas nossa prioridade é fornecer um serviço rápido e eficiente
+                             para que os clientes recuperem seus dispositivos o mais rápido possível. 
+                        </p>
+                    </div>
+                </article>
+                
+                <article class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Vocês oferecem garantia?</h3>
+                        <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Temos orgulho em oferecer garantia em todos os nossos serviços de
+                             reparação para garantir a satisfação dos nossos clientes.</p>
+                    </div>
+                </article>
+                
+                <article class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Quais formas de pagamento vocês aceitam?</h3>
+                        <i class="fa-sharp fa-solid fa-arrow-right"></i>
+
+                    </div>
+                    <div class="accordion-content">
+                        <p>Aceitamos diversas formas de pagamento, incluindo PIX,
+                             cartões de crédito e débito, e outros métodos eletrônicos</p>
+                    </div>
+                </article>
+
+                <article class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Vocês vendem acessórios?</h3>
+                        <i class="fa-sharp fa-solid fa-arrow-right"></i>
+
+                    </div>
+                    <div class="accordion-content">
+                        <p>
+                            Oferecemos uma ampla gama de acessórios para dispositivos móveis,
+                            peliculas 3D, carregadores portáteis e capinhas, fones bluetooth, fones com fio, cabos e mais.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Vocês consertam qualquer dispositivo?</h3>
+                        <i class="fa-sharp fa-solid fa-arrow-right"></i>
+
+                    </div>
+                    <div class="accordion-content">
+                        <p>
+                            Oferecemos serviço de conserto para uma ampla variedade de marcas
+                             e modelos de dispositivos, incluindo as marcas mais populares do mercado.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Vocês fazem reparação por conserto?</h3>
+                        <i class="fa-sharp fa-solid fa-arrow-right"></i>
+
+                    </div>
+                    <div class="accordion-content">
+                        <p>
+                            Fornecemos diagnósticos gratuitos para todos os dispositivos que entram
+                             em nossa loja, permitindo-nos identificar o problema e fornecer um 
+                             orçamento preciso antes de proceder com a reparação.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Vocês oferecem serviço a domicilio</h3>
+                        <i class="fa-sharp fa-solid fa-arrow-right"></i>
+
+                    </div>
+                    <div class="accordion-content">
+                        <p>
+                            Sim, oferecemos desde visita técnica e conserto no local do nosso cliente, retirada e entrega 
+Do dispositivo a ser avaliado, assim como serviço de entrega dos produtos da nossa loja.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Posso obter um orçamento antes de consertar meu dispositivo?</h3>
+                        <i class="fa-sharp fa-solid fa-arrow-right"></i>
+
+                    </div>
+                    <div class="accordion-content">
+                        <p>
+                            Fornecemos um orçamento antes de realizar o reparo para 
+                            que o cliente esteja informado do custo total do serviço.
+                        </p>
+                    </div>
+                </article>
+
+                
+                
+                <article class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Vocês oferecem serviços de manutenção preventiva?</h3>
+                        <i class="fa-sharp fa-solid fa-arrow-right"></i>
+
+                    </div>
+                    <div class="accordion-content">
+                        <p>
+                            Oferecemos serviços de manutenção preventiva para garantir que os 
+                            dispositivos estejam em condições ideais, incluindo limpeza de hardware,
+                             atualizações de software e substituição de baterias.
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <a href="https://wa.me/message/SQ5MJWRVHPNHK1" class="centred btn saber__mais btn-big btn-hero"><i class="fa-brands fa-whatsapp"></i> Escreva ao nosso Whatsapp</a>
+
+              
+        </section>
+    </main>
+    <footer class="flex-vertical">
+        <h2 class="title">Visite nossas redes sociais</h2>
+        <ul class="flex-container no-dots redes">
+            <li>
+                <a target="_blank" href="https://www.facebook.com/chrisprint2019/">
+                    <i class="fa-brands fa-facebook"></i></a> 
+            </li>
+            <li >
+                <a target="_blank" href="https://instagram.com/chris.print?igshid=NTc4MTIwNjQ2YQ==">
+                    <i class="fa-brands fa-square-instagram"></i></a>
+            </li>
+        </ul>
+
+        <h3 class="subtitle firma">&copy website feito por Keiner Mendoza <a href="">
+            <i class="fa-brands fa-github"></i></a></h3>
+    </footer>
+
+        
+
+     <!-- Initialize Swiper -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+
+    const swiper = new Swiper('.swiper', {
+
+
+        // Default parameters
+        speed: 800,
+        slidesPerView: 1,
+        spaceBetween: 10,
+        
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is >= 600px
+            600: {
+            slidesPerView: 2,
+            spaceBetween: 10
+            },
+            // when window width is >= 1040px
+            1040: {
+            slidesPerView: 3,
+            spaceBetween: 20
+            },
+            // when window width is >= 1250px
+            1250: {
+            slidesPerView: 4,
+            spaceBetween: 30
+            }
+        },
+           
+        
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+
+
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true,
+        },
+        grabCursor:true,
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+
+    });
+  </script>
+
+</body>
+</html>
